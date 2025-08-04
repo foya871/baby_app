@@ -1,0 +1,36 @@
+// https://code.visualstudio.com/docs/editor/tasks
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Launch Web Proxy",
+            "command": "./scripts/launch_web_proxy.sh",
+            "args": [
+                "vscode"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                {
+                    "owner": "dart-web",
+                    "pattern": [
+                        {
+                            "regexp": "^(.*Error.*)$",
+                            "file": 1,
+                            "line": 2,
+                            "location": 3,
+                            "message": 4
+                        }
+                    ]
+                }
+            ],
+            "presentation": {
+                "reveal": "silent",
+                "revealProblems": "onProblem",
+                "close": true
+            }
+        }
+    ]
+}

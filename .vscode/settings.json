@@ -1,0 +1,19 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/*.g.dart": true,
+    "**/*.freezed.dart": true
+  },
+  "liveServer.settings.root": "/build/web",
+  "liveServer.settings.proxy": {
+    "enable": true,
+    "baseUri": "/api",
+    "proxyUri": "http://118.107.45.22:8301/api", // 测试
+    // "proxyUri": "https://jhfkdnov21vfd.npexcgfrge.work" // 正式
+  }, 
+}

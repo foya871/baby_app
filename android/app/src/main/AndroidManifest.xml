@@ -1,0 +1,231 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <application
+        android:name="${applicationName}"
+        android:extractNativeLibs="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Ms.爱熟"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LaunchTheme"
+            android:windowSoftInputMode="adjustResize">
+            <!-- Specifies an Android theme to apply to this Activity as soon as
+                 the Android process has started. This theme is visible to the user
+                 while the Flutter UI initializes. After that, this theme continues
+                 to determine the Window background behind the Flutter UI. -->
+            <meta-data
+                android:name="io.flutter.embedding.android.NormalTheme"
+                android:resource="@style/NormalTheme" />
+            <meta-data
+                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+                android:resource="@drawable/launch_background" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Don't delete the meta-data below.
+             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+
+        <meta-data android:name="io.flutter.embedding.android.EnableImpeller"
+            android:value="false" />
+        <!-- 因为第一次一定会出现两个图标，所以先弄一个过渡 -->
+        <activity-alias
+            android:name="IconEmpty"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Ms.爱熟"
+            android:targetActivity=".MainActivity">      <!--target activity class path will be same for all alias-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name="IconOne"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/desktop_icon_1"
+            android:label="Excel"
+            android:targetActivity=".MainActivity">      <!--target activity class path will be same for all alias-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="IconTwo"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/desktop_icon_2"
+            android:label="Word"
+            android:targetActivity=".MainActivity">      <!--target activity class path will be same for all alias-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="IconThree"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/desktop_icon_3"
+            android:label="知乎"
+            android:targetActivity=".MainActivity">      <!--target activity class path will be same for all alias-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="IconFour"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/desktop_icon_4"
+            android:label="PDF"
+            android:targetActivity=".MainActivity">      <!--target activity class path will be same for all alias-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="IconFive"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/desktop_icon_5"
+            android:label="WPS"
+            android:targetActivity=".MainActivity">      <!--target activity class path will be same for all alias-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="IconSix"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/desktop_icon_6"
+            android:label="钉钉"
+            android:targetActivity=".MainActivity">      <!--target activity class path will be same for all alias-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="IconSeven"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/desktop_icon_7"
+            android:label="有菜"
+            android:targetActivity=".MainActivity">      <!--target activity class path will be same for all alias-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="IconEight"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/desktop_icon_8"
+            android:label="天气"
+            android:targetActivity=".MainActivity">      <!--target activity class path will be same for all alias-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="IconNine"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/desktop_icon_9"
+            android:label="笔记"
+            android:targetActivity=".MainActivity">      <!--target activity class path will be same for all alias-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="IconTen"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/desktop_icon_10"
+            android:label="系统安全"
+            android:targetActivity=".MainActivity">      <!--target activity class path will be same for all alias-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="IconEleven"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/desktop_icon_11"
+            android:label="系统清理"
+            android:targetActivity=".MainActivity">      <!--target activity class path will be same for all alias-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="IconTwelve"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/desktop_icon_12"
+            android:label="短信"
+            android:targetActivity=".MainActivity">      <!--target activity class path will be same for all alias-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+    </application>
+    <!-- Required to query activities that can process text, see:
+         https://developer.android.com/training/package-visibility?hl=en and
+         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+
+         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT" />
+            <data android:mimeType="text/plain" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="http" />
+        </intent>
+    </queries>
+</manifest>

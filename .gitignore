@@ -1,0 +1,72 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+*.lock
+/ios/Podfile.lock
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/linux/flutter/
+/macos/
+**/porxy
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+ .vscode/settings.json
+
+### flutter_dist.zip
+*.zip
+# 忽略所有 .g.dart 文件
+*.g.dart
+
+# 忽略所有 .freezed.dart 文件
+*.freezed.dart
+
+#调试环境设置
+# /lib/src/env/*
+
+.web_proxy.json
+lib/generate
+scripts/build
+
+# FVM Version Cache
+.fvm/
+# .vscode
+.fvmrc
+# /.vscode/settings.json
+web/*.dart.js*
